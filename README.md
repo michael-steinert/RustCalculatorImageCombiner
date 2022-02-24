@@ -18,3 +18,4 @@
 |-----------------------------------------------------------------|---------------------------------------------------|
 | cargo run -- 2 + 4                                              | Run the `main.rs` with Arguments for `calculator` |
 | cargo run -- images/github.png images/plus.png image/result.png | Run the `main.rs` with Arguments for `combiner`   |
+| cargo build                                                     | Install Crates (Dependencies) and build Program   |
