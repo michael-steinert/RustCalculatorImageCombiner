@@ -12,6 +12,10 @@
 
 * Panicking in Rust means Errors during the Runtime
 
+## Structs
+
+* Structs allow grouping up related Data together
+
 ## Ownership
 
 * Ownership allows to manage the Memory (by checking for Memory Problems wit the Borrow Checker at Compile Time)
