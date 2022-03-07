@@ -5,4 +5,5 @@ essentials/target
 quiz/target
 ownership/target
 struct/target
+enum/target
 .idea
