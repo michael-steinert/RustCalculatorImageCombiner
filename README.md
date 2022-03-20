@@ -34,7 +34,13 @@
 * References must always point to valid Data
 
 ### Slices
+
 * Slices do not take Ownership of the underlying Data
+
+### Crates
+
+* Packages contain Crates (Libraries) that are created by Cargo
+* A Crate contains Modules that allow to organize the Code
 
 # Cargo Commands
 
