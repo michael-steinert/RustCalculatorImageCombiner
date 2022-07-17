@@ -6,4 +6,5 @@ quiz/target
 ownership/target
 struct/target
 enum/target
+errors/target
 .idea
