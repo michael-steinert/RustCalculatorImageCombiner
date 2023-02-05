@@ -50,6 +50,11 @@
 
 - The Compiler will generate at Compile Time the concrete Implementation of a Generic Method for each used Primitive Type
 
+### Traits
+
+- Traits are like Interfaces in other Programming Languages
+- Traits allow to define a Set of Methods that are shared between difference Types
+
 # Cargo Commands
 
 | Command                                                         | Description                                       |

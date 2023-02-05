@@ -8,4 +8,5 @@ struct/target
 enum/target
 errors/target
 generics/target
+traits/target
 .idea
