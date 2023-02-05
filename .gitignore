@@ -7,4 +7,5 @@ ownership/target
 struct/target
 enum/target
 errors/target
+generics/target
 .idea

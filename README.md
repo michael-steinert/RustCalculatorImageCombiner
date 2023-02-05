@@ -46,6 +46,10 @@
 
 - The Function Main() can return void or a Result Type: Result<(), Box<dyn Error>>
 
+### Generics
+
+- The Compiler will generate at Compile Time the concrete Implementation of a Generic Method for each used Primitive Type
+
 # Cargo Commands
 
 | Command                                                         | Description                                       |
