@@ -55,6 +55,17 @@
 - Traits are like Interfaces in other Programming Languages
 - Traits allow to define a Set of Methods that are shared between difference Types
 
+### Lifetimes
+
+- Created References in a Function can not be returned because there Lifetime is bound to the Function
+- References can be returned if there are passed as Parameter into a Function
+- Lifetime of Parameters is called `Input Lifetimes`
+- Lifetime of Return Values is called `Out Lifetimes`
+- The Compiler can infer the Lifetime by using the following Elision Rules
+  - Each Parameter that is a Reference gets its own Lifetime Parameter
+  - If there is exactly one `Input Lifetime`, that Lifetime is assigned to all `Output Lifetime` Parameters
+  - If there are multiple `Input Lifetime` Parameters, but one of them is `&self` or `&mut self` the Lifetime of `self` is assigned to all `Output Lifetime` Parameters
+
 # Cargo Commands
 
 | Command                                                         | Description                                       |

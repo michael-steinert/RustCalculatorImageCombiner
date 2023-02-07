@@ -9,4 +9,5 @@ enum/target
 errors/target
 generics/target
 traits/target
+lifetimes/target
 .idea
