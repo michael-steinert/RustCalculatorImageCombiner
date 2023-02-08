@@ -59,8 +59,8 @@ fn main() -> Result<(), ImageDataErrors> {
         return Err(ImageDataErrors::DifferentImageFormats);
     }
 
-    // Redefine Images with standardised Dimensions
-    let (first_image, second_image) = standardise_dimension(first_image, second_image);
+    // Redefine Images with standardized Dimensions
+    let (first_image, second_image) = standardize_dimension(first_image, second_image);
 
     // Using `first_image` because the Dimensions are now identical of both Images
     let mut result_image = FloatingImage::new(first_image.width(), first_image.height(), args.result_image);
@@ -118,7 +118,7 @@ fn retrieve_smallest_dimension(first_dimension: (u32, u32), second_dimension: (u
     }
 }
 
-fn standardise_dimension(first_image: DynamicImage, second_image: DynamicImage) -> (DynamicImage, DynamicImage) {
+fn standardize_dimension(first_image: DynamicImage, second_image: DynamicImage) -> (DynamicImage, DynamicImage) {
     let (smallest_width, smallest_height) = retrieve_smallest_dimension(first_image.dimensions(), second_image.dimensions());
     println!("Smallest Width: {} and Height: {}\n", smallest_width, smallest_height);
 

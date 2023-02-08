@@ -66,6 +66,14 @@
   - If there is exactly one `Input Lifetime`, that Lifetime is assigned to all `Output Lifetime` Parameters
   - If there are multiple `Input Lifetime` Parameters, but one of them is `&self` or `&mut self` the Lifetime of `self` is assigned to all `Output Lifetime` Parameters
 
+### Tests
+
+- The `Borrow Checker` is checking that the right Types are passed between Functions
+- It also checks that the Memory is not mismatched
+- It can not check if the Business Logic is correct, therefore are Tests
+- Each Test runs in its own Thread and a Main Thread is checking the Status of this Thread
+- If the Test Thread dies caused through a `panic` then the Main Thread recognizes that the Test failed
+
 # Cargo Commands
 
 | Command                                                         | Description                                       |
@@ -73,3 +81,4 @@
 | cargo run -- 2 + 4                                              | Run the `main.rs` with Arguments for `calculator` |
 | cargo run -- images/github.png images/plus.png image/result.png | Run the `main.rs` with Arguments for `combiner`   |
 | cargo build                                                     | Install Crates (Dependencies) and build Program   |
+| cargo test                                                      | Execute Tests                                     |

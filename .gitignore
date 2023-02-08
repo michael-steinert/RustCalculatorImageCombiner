@@ -10,4 +10,5 @@ errors/target
 generics/target
 traits/target
 lifetimes/target
+tests/target
 .idea
