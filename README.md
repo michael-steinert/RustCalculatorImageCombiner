@@ -73,12 +73,17 @@
 - It can not check if the Business Logic is correct, therefore are Tests
 - Each Test runs in its own Thread and a Main Thread is checking the Status of this Thread
 - If the Test Thread dies caused through a `panic` then the Main Thread recognizes that the Test failed
+- Unit Tests are small and test a Module in Isolation and private Interfaces
+- Integration Tests are external to Library and test the public Interfaces of a Library
 
 # Cargo Commands
 
-| Command                                                         | Description                                       |
-| --------------------------------------------------------------- | ------------------------------------------------- |
-| cargo run -- 2 + 4                                              | Run the `main.rs` with Arguments for `calculator` |
-| cargo run -- images/github.png images/plus.png image/result.png | Run the `main.rs` with Arguments for `combiner`   |
-| cargo build                                                     | Install Crates (Dependencies) and build Program   |
-| cargo test                                                      | Execute Tests                                     |
+| Command                                                         | Description                                                           |
+| --------------------------------------------------------------- | --------------------------------------------------------------------- |
+| cargo run -- 2 + 4                                              | Run the `main.rs` with Arguments for `calculator`                     |
+| cargo run -- images/github.png images/plus.png image/result.png | Run the `main.rs` with Arguments for `combiner`                       |
+| cargo build                                                     | Install Crates (Dependencies) and build Program                       |
+| cargo test                                                      | Compiles Code in Test Mode Execute and runs the resulting Test Binary |
+| cargo test -- --test-threads=2                                  | Runs Tests in parallel                                                |
+| cargo test -- --test-output                                     | Runs Tests and shows Outputs even of the passing Tests                |
+| cargo test tests::                                              | Runs all Tests in Module `tests`                                      |

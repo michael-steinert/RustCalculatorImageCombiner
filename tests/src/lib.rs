@@ -18,12 +18,14 @@ fn greeting(name: &str) -> String {
   format!("Hello {}", name)
 }
 
+/* This Configuration makes this Code run when `cargo test` is called */
 #[cfg(test)]
 mod tests {
   /* Import all from `Rectangle` Module into Test */
   use super::*;
 
   #[test]
+  #[ignore]
   fn it_works() -> Result<(), String> {
     if 2 + 2 == 4 {
       Ok(())
