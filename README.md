@@ -55,6 +55,14 @@
 - Traits are like Interfaces in other Programming Languages
 - Traits allow to define a Set of Methods that are shared between difference Types
 
+### Closures
+
+- Closures are like Functions expects that their are anonymous there they do not have Names
+- A Closure captures its Variables inside the Scope in that they are defined
+- Closures ca be stored as Variables and passed into Functions
+- Closures do not need a explicit Definition of their Input and Outputs because the Compiler can infer it
+- The first Use of a Closure will determine its Type Definitions for its whole Lifetime
+
 ### Lifetimes
 
 - Created References in a Function can not be returned because there Lifetime is bound to the Function

@@ -11,4 +11,5 @@ generics/target
 traits/target
 lifetimes/target
 tests/target
+closures/target
 .idea
