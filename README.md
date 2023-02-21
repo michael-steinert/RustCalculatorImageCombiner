@@ -84,6 +84,15 @@
 - Unit Tests are small and test a Module in Isolation and private Interfaces
 - Integration Tests are external to Library and test the public Interfaces of a Library
 
+### Iterators
+
+- An Iterator allows to iterate over a Sequence of Elements regardless of how the Elements are stored
+- Iterators are a Part of the Standard Library for the common Data Structures
+- All Iterators implement the `Iterator` Trait
+- There are two Types of Methods that use Iterators:
+  - Adaptors that takes an Iterator and returns an Iterator
+  - Consumers that takes an Iterator and returns another Type
+
 # Cargo Commands
 
 | Command                                                         | Description                                                           |
